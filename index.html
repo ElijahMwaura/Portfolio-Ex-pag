@@ -1,1 +1,423 @@
-<h1>hello</h1>
+<html>
+	<head>
+		<title>My Portfolio</title>
+			<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+      body {
+        margin:0px;
+        padding:0px;
+        color:white;
+      }
+
+      h1 {
+	      padding:0px;
+	      margin-top:0px;
+	      font-family: 'Permanent Marker', cursive;
+      }
+
+      /* navigation menu */
+
+      .menu-container {
+	      height:40px;
+	      margin:0px;
+	      top:90px;
+	      margin-left:5px;
+	      line-height:38px;
+	      position:fixed;
+      }
+
+      .nav {
+	      height:40px;
+	      margin:0px;
+	      padding:10px;
+	      list-style-type:none;
+      }
+
+      .nav-item {
+	      margin:0px;
+	      margin-bottom:20px;
+	      padding:10px;
+	      border-width:1px;
+	      border-style:solid;
+	      border-color:rgba(255,255,255,0.8);
+	      border-radius:10px;
+	      text-decoration:none;
+	      text-align:center;
+	      font-family: 'Cuprum', sans-serif;
+	      font-size:25px;
+	      font-weight:lighter;
+	      background:rgba(0,0,0,0.1);
+	      text-shadow:0px 0px 1px rgba(255,255,255,0.3);
+	      box-shadow:0px 0px 1px black;
+      }
+      .nav-item:hover {
+	      border-color:#D8C6FE;
+        border-width:2px;
+        border-style:solid;
+        text-shadow:0px 0px 1px purple;
+        box-shadow: 0px 0px 1px gray;
+      }
+
+      .nav-item:active {
+        border-color:white;
+        border-width:2px;
+        border-style:solid;
+        box-shadow: 0px 0px 1px yellow;
+      }
+
+      .nav-item a {
+        text-decoration:none;
+        display:inline;
+        color:#8FF6FE;
+      }
+
+      /*first page */
+
+      #first-page {
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:url(https://wallpaperscraft.com/image/laptop_room_on_the_desk_keyboard_mouse_apple_window_interior_73963_1920x1080.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+      #first-page h1 {
+        background:rgba(117,117,117,0.5);
+        border-radius:10px;
+        text-shadow:0px 0px 5px black;
+        font-size:90px;
+        font-weight:100;
+        width:800px;
+        text-align:center;
+        padding:10px;
+        margin-top:100px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      /* sub heading */
+
+      #sub {
+        width:900px;
+        margin:0px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:20px;
+      }
+
+      #sub h2 {
+        margin:0px;
+        text-align:center;
+        font-family: 'Permanent Marker', cursive;
+        font-size:30px;
+        text-shadow:0px 0px 2px blue;
+      }
+
+      /* contact button */
+
+      .button-list {
+        height:38px;
+        width:545px;
+        padding-left:10px;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .button {
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:20px;
+        padding-right:20px;
+        margin-right:10px;
+        border-width:2px;
+        border-style:solid;
+        border-color:black;
+        border-radius:8px;
+        color:white;
+        text-shadow:0px 0px 1px white;
+        box-shadow:0px 0px 3px white;
+        text-decoration:none;
+      }
+
+      .button:hover {
+        background:rgba(255,255,255,0.3);
+        cursor:pointer;
+        color:white;
+        text-shadow:0px 0px 1px #38B4DD;
+      }
+
+      .button:active {
+        background:#8E8D8D;
+        color:white;
+      }
+
+      /* second page */
+
+      #second-page {
+        width:100%;
+        top:100%;
+        height:100%;
+        position:absolute;
+        background:url(https://wallpaperscraft.com/image/laptop_macbook_iphone_apple_journal_glasses_113949_1920x1080.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+      /* bio content */
+
+      #bio {
+        margin-top:30px;
+        margin-right:0px;
+        width:800px;
+        padding-bottom:0px;
+        float:right;
+      }
+
+      #bio h1 {
+        height:70px;
+        font-family: 'Great Vibes', cursive;
+        font-weight:lighter;
+        font-style:italic;
+        font-size:90px;
+        text-shadow:0px 0px 2px purple;
+      }
+
+      #bio p {
+        width:500px;
+        margin-left:200px;
+        font-size:33px;
+        font-family: 'Bad Script', cursive;
+        font-weight:lighter;
+        text-shadow:0px 0px 4px black;
+        text-align:right;
+      }
+
+      /*third page */
+
+      #third-page {
+        width:100%;
+        top:200%;
+        height:100%;
+        position:absolute;
+        background:url(https://www.fullbundle.com/sites/fullbundle/files/blog/5-things-to-consider-when-selecting-a-web-design-agency.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+      @keyframes slider {
+          0% {
+            left:0px     
+          }
+
+          10% {
+            left:0px
+          }
+
+          20% {
+            left:-1000px;
+          }
+
+          30% {
+            left:-1000px;
+          }
+
+          40% {
+            left:-2000px;
+          }
+
+          50% {
+            left:-2000px;
+          }
+
+          60% {
+            left:-3000px;
+          }
+
+          70% {
+            left:-3000px;
+          }
+
+          80% {
+            left:-4000px;
+          }
+
+          90% {
+            left:-4000px;
+          }
+
+          100% {
+            left:-4000px;
+          }
+        }
+
+        #slide-container {
+          margin-left:auto;
+          margin-right:auto;
+          margin-top:100px;
+          width:1000px;
+          overflow:hidden;
+          border-width:2px;
+          border-size:10px;
+          border-radius:5px;
+          border-color:black;
+          border-style:solid;
+        }
+
+        img {
+          width:1000px;
+        }
+
+        #slide-container figure img {
+          float:left;
+        }
+
+        figure {
+          margin:0px;
+            display: block;
+          position:relative;
+          width:5000px;
+          text-align:left;
+          animation:20s slider infinite;
+        }
+
+      /*fourth page */
+
+      #fourth-page {
+        width:100%;
+        top:300%;
+        height:100%;
+        position:absolute;
+        background:url(http://sajedulislam.com/images/2014/12/programer.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+      #about {
+        margin-top:30px;
+        margin-right:0px;
+        width:800px;
+        padding-bottom:0px;
+        float:right;
+      }
+
+      #about h1 {
+        height:70px;
+        font-weight:lighter;
+        font-style:italic;
+        font-size:90px;
+        text-shadow:0px 0px 2px purple;
+        margin-left:30px;
+      }
+
+      #about p {
+        width:700px;
+        margin-left:0px;
+        font-size:33px;
+        font-weight:lighter;
+        text-shadow:0px 0px 4px black;
+        text-align:right;
+      }
+      /*fifth page */
+
+      #fifth-page {
+        width:100%;
+        top:400%;
+        height:100%;
+        position:absolute;
+        background:url(http://ginovus.com/wp-content/uploads/2014/04/slide22.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+      }
+
+      .contact-list {
+        margin-top:100px;
+        float:right;
+        margin-right:150px;
+      }
+
+      .contact-button {
+        display:block;
+        margin-bottom:50px;
+        font-size:50px;
+        color:#E6DAFF;
+        text-shadow:0px 0px 2px white;
+      }
+
+      .contact-button:hover {
+        display:block;
+        margin-bottom:50px;
+        font-size:50px;
+        color:white;
+        text-shadow:0px 0px 2px black;
+      }
+
+      .contact-button:active {
+        display:block;
+        margin-bottom:50px;
+        font-size:50px;
+        color:purple;
+        text-shadow:0px 0px 10px white;
+      }
+    </style>
+	</head>
+	<body>
+		<div id="first-page">
+			<h1>Elijah Mwaura</h1>
+			<div id="sub">
+				<h2>Aspiring Web Developer&nbsp;&nbsp;:&nbsp;&nbsp;Welcome to My Portfolio</h2>
+			</div>
+			<div class="button-list">
+				<a class="button" href="https://www.google.com"><i class="fa fa-google fa-lg" id="googleicon" aria-hidden="true"></i>&nbsp; Google</a>
+				<a class="button" href="https://www.facebook.com"><i class="fa fa-facebook fa-lg" id="facebookicon" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a>
+				<a class="button" href="https://www.twitter.com"><i class="fa fa-twitter fa-lg" id="twittericon" aria-hidden="true"></i>&nbsp;&nbsp;Twitter</a>
+				<a class="button" href="https://www.instagram.com"><i class="fa fa-instagram fa-lg" id="instagramicon" aria-hidden="true"></i>&nbsp;&nbsp;Instagram</a>
+			</div>
+		</div>
+		<div id="second-page">
+			<div id="bio">
+				<h1>E l i j a h  M w a u r a</h1>
+				<p>Hello, and welcome to my Portfolio. I'm an aspiring front-end web developer. Programming is one of my passions. I hope to master HTML, CSS, and JavaScript, incuding jQuery, Angular.js, Node.js, and React.js. I also want to learn C++, and Python. My goal is to make programing and web developement a life long career</p>	
+			</div>
+		</div>
+		<div id="third-page">
+			<div id="slide-container">
+						<figure>
+							<img id="slide-pic1"  src="https://premiumcoding.com/wp-content/uploads/2016/10/construction-building-company-construction-wordpress-theme.jpg">
+							<img id="slide-pic2"  src="http://www.webdesigndev.com/wp-content/uploads/2013/03/Rounder-Multi-Purpose-Adaptive-Wordpress-Theme.jpg">
+							<img id="slide-pic3"  src="http://dobeweb.com/wp-content/uploads/2009/12/CMS-wordpress-theme.JPG">
+							<img id="slide-pic"  src="https://d2ue5m8i6umntv.cloudfront.net/animalcare/animalcare_features_image_gallery.jpg">
+							<img id="slide-pic4"  src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=DrHV5ZG5mdt6kLb3o0%2BX8xmxEkQ%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0Vinkhwfjw8177yE41y87UNCVordEGXyD3u0qYrdf37uKM7dL7umuQlELC8clANjfPKgRGLlD5PtL9m6fd8l3ZfiI427dA4BYBI3iSdf4tY">
+					</figure>
+					</div>
+		</div>
+		<div id="fourth-page">
+			<div id="about">
+				<h1>About</h1>
+				<p>This Webstite displays my portfolio. As of now I have not built any complete website except for this one so I put placeholders for the mean time. Thank you for visiting my Portfolio!</p>	
+			</div>
+		</div>
+		<div id="fifth-page">
+			<div class="contact-list">
+				<a class="contact-button" href="https://www.google.com"><i class="fa fa-google fa-lg" id="googleicon" aria-hidden="true"></i></a>
+				<a class="contact-button" href="https://www.facebook.com"><i class="fa fa-facebook fa-lg" id="facebookicon" aria-hidden="true"></i></a>
+				<a class="contact-button" href="https://www.twitter.com"><i class="fa fa-twitter fa-lg" id="twittericon" aria-hidden="true"></i></a>
+				<a class="contact-button" href="https://www.instagram.com"><i class="fa fa-instagram fa-lg" id="instagramicon" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="menu-container">
+			<ul class="nav">
+				<li class="nav-item"><a href="#first-page">Home</a></li>
+				<li class="nav-item"><a href="#second-page">Elijah Mwaura</a></li>
+				<li class="nav-item"><a href="#third-page">Portfolio</a></li>
+				<li class="nav-item"><a href="#fourth-page">About</a></li>
+				<li class="nav-item"><a href="#fifth-page">Contacts</a></li>		
+			</ul>
+		</div>
+		<script src="#"></script>
+	</body>
+</html>
